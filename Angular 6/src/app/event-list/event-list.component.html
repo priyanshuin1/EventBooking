@@ -1,0 +1,45 @@
+<!-- <p>
+  event-list works!
+</p> -->
+<div>
+  <form class="text-center">
+      <!-- <p-autoComplete [(ngModel)]="text" [suggestions]="results" (completeMethod)="autoCompleteSearch($event)"></p-autoComplete> -->
+      <!-- <mat-form-field class="fullwidth searchInput"> -->
+      
+        <div>Search Event</div>
+          <input type="inpup" #keywords (keyup)="search($event)" (keydown)="onKeydown($event)"   placeholder="Search Event">
+      <!-- </mat-form-field> -->
+  </form>
+  <div class="text-right">
+    <button class="text-center" routerLink="/login">Sign In</button>
+    <button class="text-center" routerLink="/signup">Sign Up</button>
+  </div>
+</div>
+<section class="hotProductBlocks bidProducts">
+  <div class="headingTitle">
+    <div class="headingWrap">
+      <h2>Event List</h2>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="text-center" *ngIf="alleventList?.length==0">
+        <h1>No results found!</h1>
+      </div>
+     
+      <div  class="col-md-3 col-sm-6 col-xs column" *ngFor="let event of alleventList">
+        <div class="image">
+          <!-- <figure> -->
+            <img src="/assets/eventimages/{{event.imageName}}" alt="Event" class="img-fluid" />
+          <!-- </figure> -->
+          <p class="name">{{event.eventName}}</p>
+           <p class="del">No of available seats: <span></span>{{event.seatsAvailabel}}</p>
+        </div>
+       <button *ngIf="event.seatsAvailabel!=0" class="text-center" [routerLink]="['/bookTicket',event._id]">Book Now</button>
+       <button *ngIf="event.seatsAvailabel==0" class="text-center" disabled >Sold Out</button>
+      </div>
+    </div>
+  
+  </div>
+</section>

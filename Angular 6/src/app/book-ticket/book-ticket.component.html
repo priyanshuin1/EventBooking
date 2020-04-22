@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="page-wrapper bg-gra-03 p-t-45 p-b-50" *ngIf="messageShow==false">
+        <div class="wrapper wrapper--w790">
+            <div class="card card-5">
+                <div class="card-heading">
+                    <h2 class="title">Event Booking Form</h2>
+                </div>
+                <div class="card-body">
+                    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                        <div class="form-row m-b-55">
+                            <div class="name">Name</div>
+                            <div class="value">
+                                         <div class="input-group-desc">
+                                          <input type="text" formControlName="fullName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.fullName.errors }" />
+                                          <div *ngIf="submitted && f.fullName.errors" class="invalid-feedback">
+                                              <div *ngIf="f.fullName.errors.required">Name is required!!</div>
+                                          </div>
+                                        </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Email</div>
+                            <div class="value">
+                                <div class="input-group-desc">
+                                    <input class="input--style-5" type="text" 
+                                    formControlName="emailId" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.emailId.errors }">
+                                    <div *ngIf="submitted && f.emailId.errors" class="invalid-feedback">
+                                      <div *ngIf="f.emailId.errors.required">Email is required!!</div>
+                                      <div *ngIf="f.emailId.errors.pattern">Email must be a valid email address!!</div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                        
+                        <div class="form-row m-b-55">
+                            <div class="name">Phone</div>
+                            <div class="value">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" maxlength="10"
+                                            formControlName="phoneNo" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.phoneNo.errors }">
+                                            <div *ngIf="submitted && f.phoneNo.errors" class="invalid-feedback">
+                                              <div *ngIf="f.phoneNo.errors.required">Phone No is required</div>
+                                              <div *ngIf="f.phoneNo.errors.pattern">Phone No must be 10 digit!!</div>
+                                        </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">No. of Seats</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="subject" formControlName="NoOfSeats" (change)="noOfSeatsSelected($event)"
+                                        class="form-control" [ngClass]="{ 'is-invalid': submitted && f.NoOfSeats.errors }">
+                                            <option disabled="disabled" selected="selected">Choose option</option>
+                                            <option value='1'>Seat 1</option>
+                                            <option value='2'>Seat 2</option>
+                                            <option value='3'>Seat 3</option>
+                                        </select>
+                                        <div *ngIf="submitted && f.NoOfSeats.errors" class="invalid-feedback">
+                                          <div *ngIf="f.NoOfSeats.errors.required">Please select No Of seats!!</div>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="form-row m-b-55" *ngIf="showattandance==true">
+                          <!-- <div *ngFor='let data of selectedSet;let pointIndex=index'> -->
+                          <div class="name">Name of
+                            Attendee</div>
+                          <div class="value">
+                                       <div class="input-group-desc">
+                                          <input class="input--style-5" type="text"
+                                           class="form-control" [ngClass]="{ 'is-invalid': submitted && f.NameOfAttended.errors }" formControlName="NameOfAttended" >
+                                           <div *ngIf="submitted && f.NameOfAttended.errors" class="invalid-feedback">
+                                            <div *ngIf="f.NameOfAttended.errors.required">Name of
+                                              Attendee is requried!! </div> 
+                                       </div>
+                                  </div>
+                      </div>
+                    </div>
+                  <!-- </div> -->
+                        <div>
+                            <button class="btn btn--radius-2 btn--green" type="submit">Submit</button><br>
+                            <button class="btn btn--radius-2 btn--red" type="cancel" routerLink="/eventList">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="page-wrapper bg-gra-03 p-t-45 p-b-50" *ngIf="messageShow==true">
+        <div class="wrapper wrapper--w790">
+            <div class="card card-5">
+                <div class="card-heading">
+                    <h2 class="title">Event Booking Status</h2>
+                </div>
+                <div class="text-center">
+                    <h1>Tickets booked!!</h1>
+                </div>
+                <div>
+                    If you want to book another Ticket , please click below button!!
+                </div>
+                <div>
+
+                    <button class="btn btn--radius-2 btn--green" routerLink="/eventList">Book other ticket</button><br>
+                </div>
+    </div>
+    </div>
+    </div>
+
+  
+
+</body>
+
+</html>
+<!-- end document-->
+
+
