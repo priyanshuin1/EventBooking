@@ -6,7 +6,7 @@ Install npm packages using 'npm install' command from angular6 and server folder
 
 
 ### Be have attached DB folder on this , Please import DB First 
-Foder Name- MEANStackDB
+folder Name- MEANStackDB
 
 ### Then run Code
 Frontend(Angular6): ng serve
