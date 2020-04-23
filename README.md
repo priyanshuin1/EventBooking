@@ -13,6 +13,7 @@ Frontend(Angular6 folder): ng serve
 Backend(sever folder) : npm start
 
 
+Thanks
 priyanhu kumar
  
  
