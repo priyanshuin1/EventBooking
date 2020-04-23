@@ -1,0 +1,96 @@
+{ 
+    "_id" : ObjectId("5ea0237a417ed7061495fa51"), 
+    "status" : false, 
+    "eventName" : "Kite Flying Festival", 
+    "imageName" : "event1.jpeg", 
+    "dateOfEvent" : ISODate("2020-01-01T00:00:00.000+0000"), 
+    "totalSeats" : NumberInt(100), 
+    "seatsAvailabel" : NumberInt(100), 
+    "createdAt" : ISODate("2020-04-22T10:59:06.480+0000"), 
+    "updatedAt" : ISODate("2020-04-22T10:59:06.480+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5ea0237c417ed7061495fa52"), 
+    "status" : false, 
+    "eventName" : "Music Concert", 
+    "imageName" : "event2.jpeg", 
+    "dateOfEvent" : ISODate("2020-01-01T00:00:00.000+0000"), 
+    "totalSeats" : NumberInt(100), 
+    "seatsAvailabel" : NumberInt(0), 
+    "createdAt" : ISODate("2020-04-22T10:59:08.743+0000"), 
+    "updatedAt" : ISODate("2020-04-22T10:59:08.743+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5ea0237d417ed7061495fa53"), 
+    "status" : false, 
+    "eventName" : "Film Festival", 
+    "imageName" : "event3.jpeg", 
+    "dateOfEvent" : ISODate("2020-01-01T00:00:00.000+0000"), 
+    "totalSeats" : NumberInt(100), 
+    "seatsAvailabel" : NumberInt(100), 
+    "createdAt" : ISODate("2020-04-22T10:59:09.177+0000"), 
+    "updatedAt" : ISODate("2020-04-22T10:59:09.177+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5ea0237e417ed7061495fa54"), 
+    "status" : false, 
+    "eventName" : "Fun Run", 
+    "imageName" : "event4.jpeg", 
+    "dateOfEvent" : ISODate("2020-01-01T00:00:00.000+0000"), 
+    "totalSeats" : NumberInt(100), 
+    "seatsAvailabel" : NumberInt(100), 
+    "createdAt" : ISODate("2020-04-22T10:59:10.300+0000"), 
+    "updatedAt" : ISODate("2020-04-22T10:59:10.300+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5ea0237f417ed7061495fa55"), 
+    "status" : false, 
+    "eventName" : "Talent Show", 
+    "imageName" : "event6.jpeg", 
+    "dateOfEvent" : ISODate("2020-01-01T00:00:00.000+0000"), 
+    "totalSeats" : NumberInt(100), 
+    "seatsAvailabel" : NumberInt(10), 
+    "createdAt" : ISODate("2020-04-22T10:59:11.083+0000"), 
+    "updatedAt" : ISODate("2020-04-22T23:09:09.124+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5ea0240f65e2bb0cf1ff8e40"), 
+    "status" : false, 
+    "eventName" : "Discovery through Dance", 
+    "imageName" : "event7.jpeg", 
+    "dateOfEvent" : ISODate("2020-01-01T00:00:00.000+0000"), 
+    "totalSeats" : NumberInt(100), 
+    "seatsAvailabel" : NumberInt(0), 
+    "createdAt" : ISODate("2020-04-22T11:01:35.040+0000"), 
+    "updatedAt" : ISODate("2020-04-23T19:20:26.750+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5ea0241265e2bb0cf1ff8e41"), 
+    "status" : false, 
+    "eventName" : "Multicultural Jam", 
+    "imageName" : "event5.jpeg", 
+    "dateOfEvent" : ISODate("2020-01-01T00:00:00.000+0000"), 
+    "totalSeats" : NumberInt(100), 
+    "seatsAvailabel" : NumberInt(77), 
+    "createdAt" : ISODate("2020-04-22T11:01:38.938+0000"), 
+    "updatedAt" : ISODate("2020-04-23T19:14:02.167+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5ea025ed81e29a1b155e1263"), 
+    "status" : false, 
+    "eventName" : "Karaoke Night", 
+    "imageName" : "event8.jpeg", 
+    "dateOfEvent" : ISODate("2020-01-01T00:00:00.000+0000"), 
+    "totalSeats" : NumberInt(100), 
+    "seatsAvailabel" : NumberInt(92), 
+    "createdAt" : ISODate("2020-04-22T11:09:33.072+0000"), 
+    "updatedAt" : ISODate("2020-04-23T18:19:46.742+0000"), 
+    "__v" : NumberInt(0)
+}

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../shared/user.service';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-event-list',
@@ -9,10 +10,15 @@ import { UserService } from '../shared/user.service';
 export class EventListComponent implements OnInit {
   alleventList: any;
   eventKeySearch :any="";
+  localStorage: any;
   constructor(
-    private UserService : UserService) { }
+    private UserService : UserService,
+    private router: Router) {
+      this.localStorage=window.localStorage.getItem('token');
+     }
 
   ngOnInit() {
+    
 this.getAllevent(this.eventKeySearch);
   }
   onKeydown(event){
@@ -44,6 +50,11 @@ this.getAllevent(this.eventKeySearch);
         }
       })
     
+  }
+
+  onLogout() {
+    this.UserService.deleteToken();
+    this.router.navigate(['/eventList']);
   }
 
 }

@@ -10,9 +10,14 @@
           <input type="inpup" #keywords (keyup)="search($event)" (keydown)="onKeydown($event)"   placeholder="Search Event">
       <!-- </mat-form-field> -->
   </form>
-  <div class="text-right">
+  <div class="text-right"  *ngIf="localStorage ==null">
     <button class="text-center" routerLink="/login">Sign In</button>
     <button class="text-center" routerLink="/signup">Sign Up</button>
+    
+  </div>
+  <div class="text-right" *ngIf="localStorage !=null">
+    <button class="text-center" routerLink="/userprofile">View Profile</button>
+    <!-- <button class="text-center" (click)="onLogout()">Log Out</button> -->
   </div>
 </div>
 <section class="hotProductBlocks bidProducts">
@@ -29,16 +34,18 @@
       </div>
      
       <div  class="col-md-3 col-sm-6 col-xs column" *ngFor="let event of alleventList">
-        <div class="image">
+        <div class="pic">
           <!-- <figure> -->
-            <img src="/assets/eventimages/{{event.imageName}}" alt="Event" class="img-fluid" />
+            <img class="img-frame" src="/assets/eventimages/{{event.imageName}}" alt="Event" class="img-fluid" />
           <!-- </figure> -->
           <p class="name">{{event.eventName}}</p>
            <p class="del">No of available seats: <span></span>{{event.seatsAvailabel}}</p>
         </div>
-       <button *ngIf="event.seatsAvailabel!=0" class="text-center" [routerLink]="['/bookTicket',event._id]">Book Now</button>
-       <button *ngIf="event.seatsAvailabel==0" class="text-center" disabled >Sold Out</button>
+        <div class= "button">
+       <button  *ngIf="event.seatsAvailabel>0" class="text-center" [routerLink]="['/bookTicket',event._id]">Book Now</button>
+       <button *ngIf="event.seatsAvailabel <=0" class="text-center" disabled >Sold Out</button>
       </div>
+    </div>
     </div>
   
   </div>

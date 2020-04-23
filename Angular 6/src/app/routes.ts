@@ -22,7 +22,7 @@ export const appRoutes: Routes = [
         path: 'bookTicket', component: BookTicketComponent
     },
     {
-        path: 'eventList', component: EventListComponent
+        path: 'eventList', component: EventListComponent,
     },
     {
         path: 'bookTicket/:id', component: BookTicketComponent

@@ -4,7 +4,15 @@ MEAN Stack Project inside that we have designed Login Form and Related Logout fe
 ###### Before Running this Project
 Install npm packages using 'npm install' command from angular6 and server folder. 
 
-testSSSSSS
+
+### Be have attached DB folder on this , Please import DB First 
+Foder Name- MEANStackDB
+
+### Then run Code
+Frontend(Angular6): ng serve
+Backend(sever) : npm start
+
+
 priyanhu kumar
  
  

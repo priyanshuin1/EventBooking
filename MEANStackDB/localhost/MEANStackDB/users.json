@@ -1,0 +1,64 @@
+{ 
+    "_id" : ObjectId("5d051621aa81920e435db152"), 
+    "fullName" : "test", 
+    "email" : "priyanshuin1@gmail.com", 
+    "password" : "$2a$10$.dXABXWb.w2oXniBVis5S.shIpCepH7uB/BPq32bcqEjXkhAnS9CW", 
+    "saltSecret" : "$2a$10$.dXABXWb.w2oXniBVis5S.", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d052591aa81920e435db153"), 
+    "fullName" : "ffffffff", 
+    "email" : "sdsd@yopmail.com.ccc", 
+    "password" : "$2a$10$DAghf4a.w8yQtqmmDjqxIe4mAxjwqWlL.1WRrfqNrFRNApadkOxIG", 
+    "saltSecret" : "$2a$10$DAghf4a.w8yQtqmmDjqxIe", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d0525aaaa81920e435db154"), 
+    "fullName" : "sss", 
+    "email" : "hit@yopmail.com.net", 
+    "password" : "$2a$10$Hv3fGtBaQbg6CgkQOUhW3O.LcUPXPM7uccEwZ5PqCgasBnkOMfBAm", 
+    "saltSecret" : "$2a$10$Hv3fGtBaQbg6CgkQOUhW3O", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d0525d3aa81920e435db156"), 
+    "fullName" : "hit`=", 
+    "email" : "hit@yopmail.com", 
+    "password" : "$2a$10$gHpxoTsh.eI.HV9KGZNbxeuygl7Iram.iuZK5vGaw6MKsQ/5.JeDW", 
+    "saltSecret" : "$2a$10$gHpxoTsh.eI.HV9KGZNbxe", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d074a99afbba611cab1d1e6"), 
+    "fullName" : "test kumar", 
+    "email" : "aaa@gmail.com", 
+    "password" : "$2a$10$Kd7b2nfZpvloUYRdTeSYpuKMkE2zJ.3w/dUFWCid8TFeYpAYOyzvO", 
+    "saltSecret" : "$2a$10$Kd7b2nfZpvloUYRdTeSYpu", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5ddc09b804d51113a657006a"), 
+    "fullName" : "test kumar", 
+    "email" : "hit1@yopmail.com", 
+    "password" : "$2a$10$ZEaMdV3eKvktTQmd5lOpaOcrwyU.ap3c3sGS18lCe58BZ6UVDcm4G", 
+    "saltSecret" : "$2a$10$ZEaMdV3eKvktTQmd5lOpaO", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5e9ff46427255b5d19865894"), 
+    "fullName" : "priyanshu Kumar", 
+    "email" : "priyanshu@yopmail.com", 
+    "password" : "$2a$10$itqLzqDY7EvtpnRuqB9CVOe3d92h7Uu9/w3DycU37qBKmPQ41wNUq", 
+    "saltSecret" : "$2a$10$itqLzqDY7EvtpnRuqB9CVO", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5ea0199007033732ccaf63c8"), 
+    "fullName" : "priyanshu Kumar2", 
+    "email" : "priyanshu12@yopmail.com", 
+    "password" : "$2a$10$xJvUHqRLasTFsn5FA8SfXeGV3p8.vwrxgrXajjmvjE9OhUu3VMtom", 
+    "saltSecret" : "$2a$10$xJvUHqRLasTFsn5FA8SfXe", 
+    "__v" : NumberInt(0)
+}

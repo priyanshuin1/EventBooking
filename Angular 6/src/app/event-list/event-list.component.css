@@ -1,8 +1,27 @@
-.image {
+.button{
+
+  position: unset;
     display: block;
-    width: 100%;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
+    z-index: 1;
+    right: 0px;
+    text-align: center;
+    margin: 21px;
+   
+}
+.img-frame{
+  max-width: 100%;
+    height: 100%;
+    margin : 1px;
   }
+
+  /* .pic {
+    width: 130px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #dedede; 
+    position: relative; 
+ }*/
+

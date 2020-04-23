@@ -1,0 +1,87 @@
+{ 
+    "_id" : ObjectId("5d188037a2a883226a500769"), 
+    "Images" : [
+
+    ], 
+    "groups" : [
+        {
+            "image" : [
+                "C:\\fakepath\\IMG_3126.JPG"
+            ], 
+            "_id" : ObjectId("5d188037a2a883226a50076c"), 
+            "p_name" : "test 1"
+        }, 
+        {
+            "image" : [
+                {
+                    "name" : "assets/uploads/upload_06626dcceebad61f31b3569093188b79.JPG"
+                }
+            ], 
+            "_id" : ObjectId("5d188037a2a883226a50076b"), 
+            "p_name" : "test2"
+        }, 
+        {
+            "image" : [
+                {
+                    "name" : "assets/uploads/upload_06626dcceebad61f31b3569093188b79.JPG"
+                }
+            ], 
+            "_id" : ObjectId("5d188037a2a883226a50076a"), 
+            "p_name" : "test33"
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d188095a2a883226a50076d"), 
+    "Images" : [
+
+    ], 
+    "groups" : [
+        {
+            "image" : [
+                "C:\\fakepath\\IMG_3125.JPG"
+            ], 
+            "_id" : ObjectId("5d188095a2a883226a500770"), 
+            "p_name" : "test"
+        }, 
+        {
+            "image" : [
+                "C:\\fakepath\\IMG_3128.JPG"
+            ], 
+            "_id" : ObjectId("5d188095a2a883226a50076f"), 
+            "p_name" : "test2"
+        }, 
+        {
+            "image" : [
+                "C:\\fakepath\\IMG_3137.JPG"
+            ], 
+            "_id" : ObjectId("5d188095a2a883226a50076e"), 
+            "p_name" : "test33"
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d1881a6a2a883226a500771"), 
+    "Images" : [
+
+    ], 
+    "groups" : [
+        {
+            "image" : [
+                "C:\\fakepath\\IMG_1078.JPG"
+            ], 
+            "_id" : ObjectId("5d1881a6a2a883226a500773"), 
+            "p_name" : "test 111"
+        }, 
+        {
+            "image" : [
+                "C:\\fakepath\\IMG_1082.JPG"
+            ], 
+            "_id" : ObjectId("5d1881a6a2a883226a500772"), 
+            "p_name" : "test 222"
+        }
+    ], 
+    "__v" : NumberInt(0)
+}

@@ -89,47 +89,62 @@ module.exports.addEvent=(req,res)=>{
         noOfSeats : eventData.NoOfSeats,
         nameOfAttendees : eventData.NameOfAttended,
     })
-    newbookingTicketModel.save((err,BookingTicket)=>{
-        if(BookingTicket){
-            eventModel.find({_id:req.body.eventId})
-            .exec((err,resp)=>{
-                let avalSets= resp[0].seatsAvailabel - eventData.NoOfSeats;
-                if(resp){
-                    eventModel.update({_id : req.body.eventId},
-                        {
-                            $set : {
-                                seatsAvailabel: avalSets,
-                                updatedAt: Date.now()
-                            }
-                        })
-                        .exec((err,updatedData)=>{
-                            if(updatedData){
-                                var outputJSON = {
-                                    status: 200,
-                                    msg: 'Ticket Booked!!',
-                                    saveData: BookingTicket
-                                }
-                                res.status(200).send(outputJSON)
-                            }else{
-                                var outputJSON = {
-                                    status: 201,
-                                    msg: 'error!',
-                                    saveData: err
-                                }
-                                res.status(201).send(outputJSON) 
-                            }
-                        })
+    eventModel.find({_id : req.body.eventId})
+    .exec((err,seatsCount)=>{
+        if(seatsCount[0].seatsAvailabel<eventData.NoOfSeats){
+            let avalabelseats= seatsCount[0].seatsAvailabel;
+            console.log('avalabelseats=', avalabelseats);
+            var outputJSON = {
+                status: 202,
+                msg: 'Selected seat count is not avalabel, Please select seat Less then this count or equal to '  + avalabelseats  ,
+                saveData: seatsCount
+            }
+            res.status(202).send(outputJSON)
+        }else{
+            newbookingTicketModel.save((err,BookingTicket)=>{
+                if(BookingTicket){
+                    eventModel.find({_id:req.body.eventId})
+                    .exec((err,resp)=>{
+                        let avalSets= resp[0].seatsAvailabel - eventData.NoOfSeats;
+                        if(resp){
+                            eventModel.update({_id : req.body.eventId},
+                                {
+                                    $set : {
+                                        seatsAvailabel: avalSets,
+                                        updatedAt: Date.now()
+                                    }
+                                })
+                                .exec((err,updatedData)=>{
+                                    if(updatedData){
+                                        var outputJSON = {
+                                            status: 200,
+                                            msg: 'Ticket Booked!!',
+                                            saveData: BookingTicket
+                                        }
+                                        res.status(200).send(outputJSON)
+                                    }else{
+                                        var outputJSON = {
+                                            status: 201,
+                                            msg: 'error!',
+                                            saveData: err
+                                        }
+                                        res.status(201).send(outputJSON) 
+                                    }
+                                })
+                        }
+                    })
+              
+                }else{
+                    var outputJSON = {
+                        status: 201,
+                        msg: 'error',
+                        data: err
+                    }
+                    res.status(201).send(outputJSON)
+              
                 }
             })
-      
-        }else{
-            var outputJSON = {
-                status: 201,
-                msg: 'error',
-                data: err
-            }
-            res.status(201).send(outputJSON)
-      
         }
     })
+    
  }
