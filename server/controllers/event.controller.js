@@ -79,7 +79,7 @@ module.exports.addEvent=(req,res)=>{
   * DLS
   */
  module.exports.bookTicket=(req, res)=>{
-    console.log(req.body,'653876583746587');
+    // console.log(req.body,'653876583746587');
     let eventData= req.body.bookingData;
     var newbookingTicketModel= new bookingTicketModel({
         eventId : req.body.eventId,
@@ -87,7 +87,7 @@ module.exports.addEvent=(req,res)=>{
         emailId : eventData.emailId,
         phoneNo : eventData.phoneNo,
         noOfSeats : eventData.NoOfSeats,
-        nameOfAttendees : eventData.NameOfAttended,
+        nameOfAttendees : eventData.openTextFiled,
     })
     eventModel.find({_id : req.body.eventId})
     .exec((err,seatsCount)=>{

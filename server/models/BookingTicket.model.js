@@ -19,7 +19,7 @@ var bookingTicketSchema = new mongoose.Schema({
         type : Number
     },
     nameOfAttendees : {
-        type : String
+        type : Array
     },
     status : {
         type : Boolean,
