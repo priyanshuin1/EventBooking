@@ -29,5 +29,15 @@ app.use((err, req, res, next) => {
     }
 });
 
+// app.use(express.static(path.join(__dirname, 'public')));
+// app.get('/', function (req, res) {
+//     return res.sendFile(path.resolve(path.join(__dirname, "/public/dist/index.html")));
+// });
+// app.get("/*", function (req, res) {
+//     return res.sendFile(path.resolve(path.join(__dirname, "public/dist/index.html")));
+// });
+
+
+
 // start server
 app.listen(process.env.PORT, () => console.log(`Server started at port : ${process.env.PORT}`));
