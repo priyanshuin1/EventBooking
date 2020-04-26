@@ -13,10 +13,11 @@ export class UserService {
     email: '',
     password: ''
   };
-
+  private API_URL= environment.apiBaseUrl;
+  
   noAuthHeader = { headers: new HttpHeaders({ 'NoAuth': 'True' }) };
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) { console.log('API_URL', this.API_URL);}
 
   //HttpMethods
 

@@ -15,7 +15,7 @@ export class SignUpComponent implements OnInit {
   serverErrorMessages: string;
   array: ({ a: number; b: string; c: boolean; d: number; } | { b: StringConstructor; a?: undefined; c?: undefined; d?: undefined; })[];
 
-  constructor(private userService: UserService) { }
+  constructor(public userService: UserService) { }
 
   ngOnInit() {
 
